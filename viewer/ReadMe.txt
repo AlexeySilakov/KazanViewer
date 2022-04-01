@@ -1,4 +1,4 @@
-KAZAN Viewer 1.4.2
+KAZAN Viewer 2.2.0
 
 KAZAN Viewer is a freeware tool for viewing and processing data using MatLab GUI (version >= than 6.1). It is written to simplify routine data processing tasks.
 
