@@ -1,0 +1,760 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 1.1.4  (Win32)">
+	<META NAME="CREATED" CONTENT="20050608;16322584">
+	<META NAME="CHANGED" CONTENT="20050608;17583073">
+	<STYLE>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		TD P { margin-bottom: 0.21cm }
+		P { margin-bottom: 0.21cm }
+		TH P { margin-bottom: 0.21cm }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P STYLE="margin-bottom: 0cm">Available simulation routines compatible with
+SimPlugin. Only specific for simulations parameters are presented. EasySpin (www.esr.ethz.ch) syntax rules 
+are used for spin-hamiltonian parameters definition. Any Matlab expressions in a value are allowed.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><a href="#EPR">EPR</a>, <a href="#ENDOR">ENDOR</a>, <a href="#TRIPLE">TRIPLE</a>, <a href="#Mossbauer">M<FONT FACE="Times New Roman, serif">ö</FONT>ssbauer</a></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><B><A name="EPR">EPR</A></B></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=11%>
+				<P ALIGN=CENTER><B>EPR05</B></P>
+			</TD>
+			<TD WIDTH=9%>
+				<P ALIGN=CENTER>EPR</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>EPR of one spin S=1/2 and multiple I=1/2 nuclei. Hyperfine is evaluated in
+				   the effective magnetic field frame. No restriction on nuclei
+				parameters symmetry.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=11%>
+				<P ALIGN=CENTER><B>EPRs05ii</B></P>
+			</TD>
+			<TD WIDTH=9%>
+				<P ALIGN=CENTER>EPR</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>EPR of one spin S=1/2 and two I=5/2 nuclei (Mn). First order
+				perturbation on electron transition. No restriction on nuclei
+				parameters symmetry.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=11%>
+				<P ALIGN=CENTER><B>EPRgisoD</B></P>
+			</TD>
+			<TD WIDTH=9%>
+				<P ALIGN=CENTER>EPR</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>EPR of even spin S and two I=5/2 nuclei. Isotropic g-factor.
+				Second order perturbation theory.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=11%>
+				<P ALIGN=CENTER><B>EPRgisoD3</B></P>
+			</TD>
+			<TD WIDTH=9%>
+				<P ALIGN=CENTER>EPR</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>EPR of even spin S and two I=5/2 nuclei. Isotropic g-factor.
+				Third order perturbation theory.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><B><A name="ENDOR">ENDOR</A></B></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD ROWSPAN=3 WIDTH=11%>
+				<P ALIGN=CENTER><B>sugar</B></P>
+			</TD>
+			<TD ROWSPAN=3 WIDTH=9%>
+				<P>ENDOR</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>ENDOR of the one spin S=1/2 and one I=1/2 nuclei. First order
+				perturbation on electron transition. No restriction on nuclei
+				parameters symmetry. Approximate excitation window.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Hole</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Blind spot in [MHz]. If 0 ignored.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Scheme</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Type of ENDOR sequence. Also see Exp.Hole.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD ROWSPAN=3 WIDTH=11%>
+				<P ALIGN=CENTER><B>sugar1</B></P>
+			</TD>
+			<TD ROWSPAN=3 WIDTH=9%>
+				<P>ENDOR</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>ENDOR of one spin S=1/2 and one I=1 nuclei. First order
+				perturbation on electron transition. No restriction on nuclei
+				parameters symmetry. Approximate excitation window.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Hole</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Blind spot in [MHz]. If 0 ignored.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Scheme</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Type of ENDOR sequence. Also see Exp.Hole.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD ROWSPAN=4 WIDTH=11%>
+				<P ALIGN=CENTER><B>ENDOR05</B></P>
+			</TD>
+			<TD ROWSPAN=4 WIDTH=9%>
+				<P>ENDOR</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>ENDOR of one spin S=1/2 and multiple I=1/2 nuclei. Exact treatment
+                   of hpf in the effective magnetic field frame. No restriction on nuclei
+				   parameters symmetry. Precise excitation window using all hpf couplings. 
+				   As a drawback produces sometimes funny intensities. Fast.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Hole</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Blind spot in [MHz]. If 0 ignored.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Scheme</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Type of ENDOR sequence. Also see Exp.Hole.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Opt</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Amp</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Amplitude of every transition. Size(Opt.Amp)=[Number of
+				nuclei] or [Number of nuclei x number of transitions]</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=11%>
+				<P ALIGN=CENTER><B>ENDORs05ii</B></P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>ENDOR</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>ENDOR of one spin S=1/2 and two I=5/2 nuclei (Mn). Second order
+				perturbation theory.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=11%>
+				<P ALIGN=CENTER><B>ENDORs05iiii</B></P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>ENDOR</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>ENDOR of one spin S=1/2 and four I=5/2 nuclei. Second order
+				perturbation theory.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><B><A name="TRIPLE">TRIPLE</a></B></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD ROWSPAN=3 WIDTH=11%>
+				<P ALIGN=CENTER><B>triplesugar</B></P>
+			</TD>
+			<TD ROWSPAN=3 WIDTH=9%>
+				<P>TRIPLE</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>TRIPLE of one spin S=1/2 and one I=1/2 nuclei. First order
+				perturbation on electron transition. No restriction on nuclei
+				parameters symmetry. Approximate excitation window.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Hole</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Blind spot in [MHz]. If 0 ignored.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Scheme</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Type of ENDOR sequence. Also see Exp.Hole.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD ROWSPAN=3 WIDTH=11%>
+				<P ALIGN=CENTER><B>triplesugar1D</B></P>
+			</TD>
+			<TD ROWSPAN=3 WIDTH=9%>
+				<P>TRIPLE</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>TRIPLE of one spin S=1/2 and one I=1/2 nuclei. First order
+				perturbation on electron transition. No restriction on nuclei
+				parameters symmetry. Approximate excitation window.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Hole</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Blind spot in [MHz]. If 0 ignored.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Scheme</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Type of ENDOR sequence. Also see Exp.Hole.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD ROWSPAN=3 WIDTH=11%>
+				<P ALIGN=CENTER><B>triplesugar2D</B></P>
+			</TD>
+			<TD ROWSPAN=3 WIDTH=9%>
+				<P>TRIPLE</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>TRIPLE of one spin S=1/2 and one I=1/2 nuclei. First order
+				perturbation on electron transition. No restriction on nuclei
+				parameters symmetry. Approximate excitation window. 2D version.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Hole</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Blind spot in [MHz]. If 0 ignored.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Scheme</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Type of ENDOR sequence. Also see Exp.Hole.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><B><A name="Mossbauer">Mossbauer</A></B></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=29*>
+	<COL WIDTH=23*>
+	<COL WIDTH=20*>
+	<COL WIDTH=22*>
+	<COL WIDTH=162*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=11%>
+				<P>Simulation</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Type</P>
+			</TH>
+			<TH WIDTH=8%>
+				<P>Structure</P>
+			</TH>
+			<TH WIDTH=9%>
+				<P>Field</P>
+			</TH>
+			<TH WIDTH=63%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD ROWSPAN=3 WIDTH=11%>
+				<P ALIGN=CENTER><B>mossbill</B></P>
+			</TD>
+			<TD ROWSPAN=3 WIDTH=9%>
+				<P>Mossbauer</P>
+			</TD>
+			<TD COLSPAN=3 WIDTH=80%>
+				<P>Mossbauer of one spin S=1/2 and multiple I=1/2 nuclei. First
+				order perturbation on electron transition. No restriction on
+				nuclei parameters symmetry. Precise excitation window.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Hole</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Blind spot in [MHz]. If 0 ignored.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=8%>
+				<P>Exp</P>
+			</TD>
+			<TD WIDTH=9%>
+				<P>Scheme</P>
+			</TD>
+			<TD WIDTH=63%>
+				<P>Type of ENDOR sequence. Also see Exp.Hole.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+</BODY>
+</HTML>

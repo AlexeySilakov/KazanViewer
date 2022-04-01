@@ -1,0 +1,13 @@
+fft.awin = 'ham'
+fft.awidth = 1
+fft.aalpha = 0.6
+fft.ashift = 0
+fft.zerofill = 2
+fft.rshift = 0
+fft.lshift = 0
+fft.opt = 'reim4abs'
+fft.xscale = 1
+fft.cta = 100
+fft.phase0 = 0
+fft.bsline='polyfit2D'
+fft.n_pol = 2

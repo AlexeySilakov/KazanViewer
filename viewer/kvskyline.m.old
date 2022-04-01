@@ -1,0 +1,87 @@
+%   KVSKYLINE skyline projection 2D contour plot 
+%   kvskyline(figure_number, ax, y, varargin)
+%   'ax' parameters
+%      ax.contour, ax.tc, ax.filt - see KAZAN viewer 
+%   additional parameters (first value is default):
+%      skyline  0.1               - width of skyline subplot
+%      plot    'image'/'contour'  - plot type
+%      hold    'on'/'off'         - hold previous plot  
+function kvskyline(n, ax, y, varargin)
+
+if nargin > 3,
+    if ~mod(nargin-3,2)
+        for kk=1:2:nargin-3
+            ax=setfield(ax, lower(varargin{kk}), varargin{kk+1});    
+        end
+    else
+        error('Wrong amount of arguments')
+    end
+end
+brd   = safeget(ax, 'skyline', .1);
+ptype = safeget(ax, 'plot', 'image');
+holdmode = safeget(ax, 'hold', 'off');
+
+skylinex = safeget(ax,'skylinex',max(real(y), [], 1));
+skyliney = safeget(ax,'skyliney',max(real(y), [], 2));
+contr  = safeget(ax, 'contour', [0.1]);
+
+figure(n)
+% center plot 
+hdl = get(n, 'UserData');
+if strcmp(lower(holdmode), 'off') | ~iscell(hdl) | length(hdl) ~= 3
+    clf
+    hdl{2} = subplot('position', [.1, .1,  .8-brd, .8-brd]);
+    holdmode = 'off';
+else
+    set(n, 'CurrentAxes', hdl{2});
+    hold('on')
+end
+y = processing(y, ax);
+maxyy = max(max(real(y)));
+minyy = min(min(real(y)));
+sh = -minyy;
+clim = contr*real(maxyy-minyy+sh);
+if strcmp(lower(ptype), 'image')
+    h = imagesc(ax.x, ax.y, real(y).', [min(clim), max(clim)]);
+    set(gca, 'YDir', 'normal')
+else
+    contour(ax.x, ax.y, real(y+sh).', clim);
+end
+
+xlabel(safeget(ax, 'xlabel', ''))
+ylabel(safeget(ax, 'ylabel', ''))
+axis tight
+if isfield(ax, 'Lim')
+    axis(ax.Lim)
+end
+
+XLim = get(hdl{2}, 'XLim');
+YLim = get(hdl{2}, 'YLim');
+
+% up plot 
+if strcmp(lower(holdmode), 'off')
+    hdl{1} = subplot('position',[.1, .9-brd,  .8-brd, brd]);
+else
+    set(n, 'CurrentAxes', hdl{1});
+    hold('on')
+end
+
+plot(ax.x, skyliney, 'Color', safeget(ax,'Color','b'));
+set(hdl{1}, 'XAxisLocation', 'top');
+set(hdl{1}, 'YTick', []);
+axis([XLim(1),XLim(2),-Inf,Inf])
+
+% right plot 
+if strcmp(lower(holdmode), 'off')
+    hdl{3} = subplot('position', [.9-brd, .1,  brd, .8-brd]);
+else
+    set(n, 'CurrentAxes', hdl{3});
+    hold('on')
+end
+plot(skylinex,ax.y, 'Color', safeget(ax,'Color','b'));
+set(hdl{3}, 'YAxisLocation', 'right');
+set(hdl{3}, 'XTick', []);
+axis([-Inf,Inf,YLim(1),YLim(2)])
+
+set(n, 'UserData', hdl);
+set(n, 'CurrentAxes', hdl{2});

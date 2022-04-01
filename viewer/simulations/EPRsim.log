@@ -1,0 +1,78 @@
+nSpins 2
+S 2 2 0
+nNucs 0
+I 0.5 0 0
+g 
+2 2 2
+2 2 2
+0 0 0
+gn 0 0 0
+HStrain [mT] 0 0 0
+A [MHz]
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+Aang [deg]
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+E-E [MHz]
+-6000 -6000 -6000
+    0     0     0
+    0     0     0
+E-E ang [deg]
+0 0 0
+0 0 0
+0 0 0
+D [MHz]
+  19712   92288 -112000
+  19712   92288 -112000
+      0       0       0
+D ang [deg]
+0 0 0
+0 0 0
+0 0 0
+D strain [MHz]
+0 0 0
+0 0 0
+0 0 0
+fwhh [mT] 1
+Bmin [mT] 0
+Bmax [mT] 100
+nPoints 1000
+mwFreq [MHz] 9387
+Temperature [K] 5
+Harmonic 0
+DetAng [deg] 0
+nKnots 60
+nRanges 5
+EigenField 0
+4%
+10%
+15%
+20%
+26%
+32%
+39%
+45%
+52%
+59%
+66%
+73%
+80%
+88%
+95%
+ time 78194 ms
+ time Eigen0 ms

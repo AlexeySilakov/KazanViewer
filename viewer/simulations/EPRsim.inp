@@ -1,0 +1,23 @@
+nSpins 2 
+S_values 2.00 2.00 
+g_values 2.000000 2.000000 2.000000 
+g_values 2.000000 2.000000 2.000000 
+fwhh 1.000000 
+HStrain 0.000000 0.000000 0.000000 
+nNucs 0 
+I_values 0.50 
+Ee_values -6000.000000 -6000.000000 -6000.000000 
+D_values 19712.000000 92288.000000 -112000.000000 
+D_values 19712.000000 92288.000000 -112000.000000 
+Bmin 0.000000 
+Bmax 100.000000 
+mwFreq 9387.000000 
+nPoints 1000 
+Temperature 5 
+DetAng 0.000000 
+Harmonic 0 
+nKnots 60 
+nExtraKnots 30 
+nRanges 5 
+PrintSystem 1 
+EigenField 0 
